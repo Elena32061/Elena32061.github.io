@@ -1,195 +1,180 @@
-<!DOCTYPE HTML>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-  <title>余江南 | Jiangnan Yu</title>
-  
-  <meta name="author" content="Jiangnan Yu">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+  <meta name="author" content="Jiangnan Yu">
+  <meta name="description" content="Jiangnan Yu | Ph.D. student at HKUST working on computer architecture and machine learning acceleration.">
+  <title>Jiangnan Yu</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Newsreader:opsz,wght@6..72,500;6..72,700&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <link rel="icon" type="image/png" href="images/hkust_logo.png">
 </head>
 
 <body>
-  <table style="width:100%;max-width:950px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-    <tr style="padding:0px" id="top">
-      <td style="padding:0px">
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr style="padding:0px">
-            <td style="padding:2.5%;width:67%;vertical-align:middle">
-              <p style="text-align:center">
-                <name>Jiangnan Yu</name>
-              </p>
-              <p>I am a second-year Ph.D. student at <a href="https://hkust.edu.hk/">The Hong Kong University of Science and Technology (HKUST)</a>, advised by <a href="https://ece.hkust.edu.hk/yuanxie">Prof. Yuan Xie</a>. My research interests are in <strong>Computer Architecture</strong> and <strong>Machine Learning</strong>, with a focus on designing efficient hardware accelerators for sparse computation, in-memory computing, and large language models.
-              </p>
-              <p>Before joining HKUST, I received my M.S. and B.S. in Microelectronics from <a href="https://www.fudan.edu.cn/">Fudan University</a>, where I developed a strong foundation in VLSI design and computer architecture.
-              </p>
-              <p style="text-align:center">
-                <a href="https://github.com/Elena32061">GitHub</a>
-                <!-- 可以添加更多链接，例如：
-                &nbsp/&nbsp <a href="data/CV.pdf">CV</a>
-                &nbsp/&nbsp <a href="https://scholar.google.com/">Google Scholar</a>
-                &nbsp/&nbsp <a href="https://www.linkedin.com/">LinkedIn</a>
-                -->
-              </p>
-            </td>
-            <td style="padding:2.5%;width:40%;max-width:40%">
-              <a href="images/profile_photo.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/profile_photo.jpg" class="hoverZoomLink"></a>
-                <br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Email: 
-                <br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; jyucr@connect.ust.hk
-            </td>
-          </tr>
-        </tbody></table>
+  <header class="top-nav">
+    <div class="top-nav-inner">
+      <a class="brand" href="#top">Jiangnan Yu</a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#research">Research</a>
+        <a href="#news">News</a>
+        <a href="#education">Education</a>
+        <a href="#publications">Publications</a>
+      </nav>
+    </div>
+  </header>
 
-        <!-- Research Interests -->
-          <table style="width:101%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;margin:-25px 0px -25px 0px"><tbody>
-            <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Research Interests</heading>  
-              <p></p>
-              My research lies at the intersection of <strong>Computer Architecture</strong> and <strong>Machine Learning</strong>. I am passionate about designing efficient computing systems through hardware-software co-design to accelerate emerging AI workloads.
-              <ul> 
-                <li><strong>Sparse Computing</strong>: Efficient accelerators for sparse matrix operations (GEMM) with online sparsity prediction</li>
-                <li><strong>In-Memory Computing</strong>: Digital stochastic computing in memory, ReRAM-based acceleration for edge AI</li>
-                <li><strong>LLM Acceleration</strong>: Multi-chiplet architectures with HBM-PIM for large language model inference</li>
-                <li><strong>Hardware Design Automation</strong>: NoC generators, DNN accelerator simulators</li>
-              </ul>
-              </td>
-          </tr> 
-        </tbody></table>
+  <main class="container" id="top">
+    <section class="hero card">
+      <div>
+        <p class="eyebrow">Ph.D. Student, HKUST ECE</p>
+        <h1>Jiangnan Yu</h1>
+        <p class="tagline">Computer Architecture · ML Systems · Hardware-Software Co-Design</p>
 
-        <!-- News -->
-          <table style="width:101%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-              <tr>
-              <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>News</heading>  
-              <p></p>
-              <ul>
-                <li>[2026] <b style="color:#3EA055;">[Paper]</b> Our work <papertitle>DSCIM</papertitle> on Digital Stochastic Computing in Memory accepted to <strong>DATE 2026</strong>!</li>
-                <li>[2025] <b style="color:#3EA055;">[Paper]</b> Our work <papertitle>McPAL</papertitle> on Multi-Chiplet HBM-PIM Architecture for LLMs accepted to <strong>DAC 2025</strong>!</li>
-                <li>[2025] <b style="color:#3EA055;">[Paper]</b> Our work <papertitle>DIRC-RAG</papertitle> on Edge RAG acceleration accepted to <strong>ISLPED 2025</strong>!</li>
-                <li>[2024] <b style="color:#3EA055;">[Paper]</b> Our work <papertitle>FullSparse</papertitle> on Sparse-Aware GEMM Accelerator published at <strong>CF 2024</strong>.</li>
-                <li>[Jan. 2026] Started this personal website!</li>
-              </ul>
-                </td>
-              </tr> 
-          </tbody></table>
+        <p>
+          I am a second-year Ph.D. student at
+          <a href="https://hkust.edu.hk/">The Hong Kong University of Science and Technology (HKUST)</a>,
+          advised by <a href="https://ece.hkust.edu.hk/yuanxie">Prof. Yuan Xie</a>.
+          My research interests lie at the intersection of computer architecture and machine learning,
+          with a focus on efficient hardware acceleration for sparse computation, in-memory computing, and large language models.
+        </p>
+        <p>
+          Before joining HKUST, I received my M.S. and B.S. in Microelectronics from
+          <a href="https://www.fudan.edu.cn/">Fudan University</a>.
+        </p>
 
-        <!-- Education -->
-        <table style="width:101%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-              <tr>
-              <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Education</heading>  
-                <p></p>
-              <ul>
-                <li><strong>Ph.D. in Electronic and Computer Engineering</strong>, The Hong Kong University of Science and Technology (HKUST), 2024 - Present
-                  <br>&nbsp;&nbsp;&nbsp;&nbsp;Advisor: <a href="https://ece.hkust.edu.hk/yuanxie">Prof. Yuan Xie</a>
-                </li>
-                <li><strong>M.S. in Microelectronics</strong>, Fudan University (复旦大学), 2021 - 2024
-                </li>
-                <li><strong>B.S. in Microelectronics</strong>, Fudan University (复旦大学), 2017 - 2021
-                </li>
-              </ul>
-              </td>
-            </tr> 
-        </tbody></table>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://github.com/Elena32061">GitHub</a>
+          <a class="btn" href="mailto:jyucr@connect.ust.hk">Email</a>
+        </div>
 
-        <!-- Publications -->
-        <table style="width:101%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Publications</heading>  
-              <p style="font-size:12px;">(*: Equal Contributions)</p>
-              <ul>
-                <li>
-                  <papertitle>Scalable Sparse Transformer Accelerator with In-Memory Butterfly Zero Skipper and Local Attention Reusable Engine for Irregular-Pruned NN</papertitle>
-                  <br>
-                  <strong>Jiangnan Yu</strong>, et al.
-                  <br>
-                  <em>IEEE Journal on Emerging and Selected Topics in Circuits and Systems (<strong>JETCAS</strong>)</em>, 2026 <b style="color:#3EA055;">[Accepted]</b>
-                </li>
-                <br>
-                <li>
-                  <papertitle>DSCIM: Digital Stochastic Computing in Memory Featuring Accurate OR Accumulation for Edge AI Models</papertitle>
-                  <br>
-                  <strong>Jiangnan Yu*</strong>, et al.
-                  <br>
-                  <em>Design, Automation and Test in Europe Conference (<strong>DATE</strong>)</em>, 2026 <b style="color:#3EA055;">[Accepted]</b>
-                </li>
-                <br>
-                <li>
-                  <papertitle>McPAL: Scaling Unstructured Sparse Inference with Multi-Chiplet HBM-PIM Architecture for LLMs</papertitle>
-                  <br>
-                  Shiwei Liu, <strong>Jiangnan Yu</strong>, et al.
-                  <br>
-                  <em>Design Automation Conference (<strong>DAC</strong>)</em>, 2025 <b style="color:#3EA055;">[Accepted]</b>
-                </li>
-                <br>
-                <li>
-                  <papertitle>DIRC-RAG: Accelerating Edge RAG with Robust High-Density and High-Loading-Bandwidth Digital In-ReRAM Computation</papertitle>
-                  <br>
-                  <strong>Jiangnan Yu*</strong>, et al.
-                  <br>
-                  <em>International Symposium on Low Power Electronics and Design (<strong>ISLPED</strong>)</em>, 2025
-                </li>
-                <br>
-                <li>
-                  <papertitle>FullSparse: A Sparse-Aware GEMM Accelerator with Online Sparsity Prediction</papertitle>
-                  <br>
-                  <strong>Jiangnan Yu</strong>, Yang Fan, et al.
-                  <br>
-                  <em>ACM International Conference on Computing Frontiers (<strong>CF</strong>)</em>, 2024
-                </li>
-                <br>
-                <li>
-                  <papertitle>TPNoC: An Efficient Topology Reconfigurable NoC Generator</papertitle>
-                  <br>
-                  <strong>Jiangnan Yu</strong>, et al.
-                  <br>
-                  <em>Great Lakes Symposium on VLSI (<strong>GLSVLSI</strong>)</em>, 2023
-                </li>
-                <br>
-                <li>
-                  <papertitle>NNASIM: An Efficient Event-Driven Simulator for DNN Accelerators with Accurate Timing and Area Models</papertitle>
-                  <br>
-                  X. Yi, <strong>Jiangnan Yu</strong>, et al.
-                  <br>
-                  <em>IEEE International Symposium on Circuits and Systems (<strong>ISCAS</strong>)</em>, 2022
-                </li>
-   				</ul>
-              </td>
-            </tr>
-          </tbody></table>
+        <ul class="quick-facts">
+          <li><span>Focus</span>Architecture for sparse and LLM workloads</li>
+          <li><span>Method</span>Hardware-software co-design</li>
+          <li><span>Advisor</span>Prof. Yuan Xie</li>
+        </ul>
+      </div>
 
-        <!-- Misc -->
-        <table style="width:101%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Misc</heading>  
-              <p></p>
-              <ul>
-                <li><strong>Hobbies</strong>: I enjoy running and hiking in my free time.</li>
-              </ul>
-            </td>
-          </tr>
-        </tbody></table>
+      <aside class="profile-panel">
+        <a href="images/profile_photo.jpg">
+          <img src="images/profile_photo.jpg" alt="Profile photo of Jiangnan Yu">
+        </a>
+        <p class="email-pill">jyucr@connect.ust.hk</p>
+      </aside>
+    </section>
 
-        <!-- Footer -->
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:0px">
-              <br>
-              <p style="text-align:right;font-size:small;">
-                Last Update: Jan. 2026
-                <br><br>
-                <a href="#top">Back to Top</a> | <a href="https://github.com/jonbarron/website">Website Template</a>
-                </p>
-            </td>
-          </tr>
-        </tbody></table>
-      </td>
-    </tr>
-  </tbody></table>
+    <section class="card" id="research">
+      <h2 class="section-title">Research Focus</h2>
+      <p class="section-subtitle">
+        My work explores efficient AI computing systems through architecture innovation and accelerator design.
+      </p>
+      <ul class="focus-list">
+        <li><strong>Sparse Computing:</strong> Accelerators for sparse GEMM with online sparsity prediction.</li>
+        <li><strong>In-Memory Computing:</strong> Digital stochastic computing in memory and ReRAM-based acceleration for edge AI.</li>
+        <li><strong>LLM Acceleration:</strong> Multi-chiplet architectures with HBM-PIM for large language model inference.</li>
+        <li><strong>Design Automation:</strong> NoC generators and event-driven DNN accelerator simulators.</li>
+      </ul>
+    </section>
+
+    <section class="card" id="news">
+      <h2 class="section-title">News</h2>
+      <ul class="timeline">
+        <li>
+          <span class="year">2026</span>
+          <p><span class="tag-paper">[Paper]</span> DSCIM on Digital Stochastic Computing in Memory was accepted to <strong>DATE 2026</strong>.</p>
+        </li>
+        <li>
+          <span class="year">2025</span>
+          <p><span class="tag-paper">[Paper]</span> McPAL on Multi-Chiplet HBM-PIM architecture for LLMs was accepted to <strong>DAC 2025</strong>.</p>
+        </li>
+        <li>
+          <span class="year">2025</span>
+          <p><span class="tag-paper">[Paper]</span> DIRC-RAG on edge RAG acceleration was accepted to <strong>ISLPED 2025</strong>.</p>
+        </li>
+        <li>
+          <span class="year">2024</span>
+          <p><span class="tag-paper">[Paper]</span> FullSparse on sparse-aware GEMM acceleration was published at <strong>CF 2024</strong>.</p>
+        </li>
+        <li>
+          <span class="year">Jan 2026</span>
+          <p>Personal website launched.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="card" id="education">
+      <h2 class="section-title">Education</h2>
+      <ul class="edu-list">
+        <li>
+          <p class="degree">Ph.D. in Electronic and Computer Engineering</p>
+          <p class="school">The Hong Kong University of Science and Technology (HKUST), 2024 - Present</p>
+          <p class="detail">Advisor: <a href="https://ece.hkust.edu.hk/yuanxie">Prof. Yuan Xie</a></p>
+        </li>
+        <li>
+          <p class="degree">M.S. in Microelectronics</p>
+          <p class="school">Fudan University (复旦大学), 2021 - 2024</p>
+        </li>
+        <li>
+          <p class="degree">B.S. in Microelectronics</p>
+          <p class="school">Fudan University (复旦大学), 2017 - 2021</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="card" id="publications">
+      <h2 class="section-title">Selected Publications</h2>
+      <p class="pub-note">*: Equal contributions</p>
+      <ol class="pub-list">
+        <li>
+          <p class="paper-title">Scalable Sparse Transformer Accelerator with In-Memory Butterfly Zero Skipper and Local Attention Reusable Engine for Irregular-Pruned NN</p>
+          <p class="paper-authors"><strong>Jiangnan Yu</strong>, et al.</p>
+          <p class="paper-venue">IEEE JETCAS, 2026 <span class="badge accepted">Accepted</span></p>
+        </li>
+        <li>
+          <p class="paper-title">DSCIM: Digital Stochastic Computing in Memory Featuring Accurate OR Accumulation for Edge AI Models</p>
+          <p class="paper-authors"><strong>Jiangnan Yu*</strong>, et al.</p>
+          <p class="paper-venue">DATE, 2026 <span class="badge accepted">Accepted</span></p>
+        </li>
+        <li>
+          <p class="paper-title">McPAL: Scaling Unstructured Sparse Inference with Multi-Chiplet HBM-PIM Architecture for LLMs</p>
+          <p class="paper-authors">Shiwei Liu, <strong>Jiangnan Yu</strong>, et al.</p>
+          <p class="paper-venue">DAC, 2025 <span class="badge accepted">Accepted</span></p>
+        </li>
+        <li>
+          <p class="paper-title">DIRC-RAG: Accelerating Edge RAG with Robust High-Density and High-Loading-Bandwidth Digital In-ReRAM Computation</p>
+          <p class="paper-authors"><strong>Jiangnan Yu*</strong>, et al.</p>
+          <p class="paper-venue">ISLPED, 2025</p>
+        </li>
+        <li>
+          <p class="paper-title">FullSparse: A Sparse-Aware GEMM Accelerator with Online Sparsity Prediction</p>
+          <p class="paper-authors"><strong>Jiangnan Yu</strong>, Yang Fan, et al.</p>
+          <p class="paper-venue">CF, 2024</p>
+        </li>
+        <li>
+          <p class="paper-title">TPNoC: An Efficient Topology Reconfigurable NoC Generator</p>
+          <p class="paper-authors"><strong>Jiangnan Yu</strong>, et al.</p>
+          <p class="paper-venue">GLSVLSI, 2023</p>
+        </li>
+        <li>
+          <p class="paper-title">NNASIM: An Efficient Event-Driven Simulator for DNN Accelerators with Accurate Timing and Area Models</p>
+          <p class="paper-authors">X. Yi, <strong>Jiangnan Yu</strong>, et al.</p>
+          <p class="paper-venue">ISCAS, 2022</p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="card" id="misc">
+      <h2 class="section-title">Misc</h2>
+      <p class="misc-text"><strong>Hobbies:</strong> Running and hiking.</p>
+    </section>
+
+    <footer class="site-footer">
+      <p>Last updated: March 2026</p>
+      <p><a href="#top">Back to Top</a> · <a href="https://github.com/jonbarron/website">Template origin</a></p>
+    </footer>
+  </main>
 </body>
-
 </html>
