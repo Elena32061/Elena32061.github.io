@@ -107,9 +107,9 @@ a:focus {
 
 .hero {
   display: grid;
-  grid-template-columns: 1.35fr 0.85fr;
+  grid-template-columns: 1.45fr 0.65fr;
   gap: 32px;
-  align-items: center;
+  align-items: start;
 }
 
 .eyebrow {
@@ -204,6 +204,8 @@ h1 {
 }
 
 .profile-panel {
+  width: min(100%, 300px);
+  justify-self: end;
   background: var(--surface-solid);
   border: 1px solid var(--line);
   border-radius: 18px;
@@ -438,7 +440,8 @@ h1 {
   }
 
   .profile-panel {
-    max-width: 420px;
+    width: min(100%, 280px);
+    justify-self: start;
   }
 
   .focus-list {
