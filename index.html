@@ -17,7 +17,7 @@
     .quick-facts { list-style: none; padding-left: 0; }
   </style>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Newsreader:opsz,wght@6..72,500;6..72,700&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="stylesheet.css?v=20260307a">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css?v=20260713b">
   <link rel="icon" type="image/png" href="images/hkust_logo.png">
 </head>
 
@@ -27,6 +27,7 @@
       <a class="brand" href="#top">Jiangnan Yu</a>
       <nav class="nav-links" aria-label="Primary">
         <a href="#research">Research</a>
+        <a href="#projects">Projects</a>
         <a href="#news">News</a>
         <a href="#education">Education</a>
         <a href="#publications">Publications</a>
@@ -45,8 +46,8 @@
           I am a second-year Ph.D. student at
           <a href="https://hkust.edu.hk/">The Hong Kong University of Science and Technology (HKUST)</a>,
           advised by <a href="https://ece.hkust.edu.hk/yuanxie">Prof. Yuan Xie</a>.
-          My research interests lie at the intersection of computer architecture and machine learning,
-          with a focus on efficient hardware acceleration for sparse computation, in-memory computing, and large language models.
+          My research focuses on efficient AI systems and computer architecture, especially CPU-GPU serving for LLM and MoE workloads,
+          memory-centric acceleration, and hardware-software co-design for irregular AI computation.
         </p>
         <p>
           Before joining HKUST, I received my M.S. and B.S. in Microelectronics from
@@ -59,8 +60,9 @@
         </div>
 
         <ul class="quick-facts">
-          <li><span>Focus</span>Architecture for sparse and LLM workloads</li>
+          <li><span>Focus</span>AI serving &amp; memory-centric systems</li>
           <li><span>Method</span>Hardware-software co-design</li>
+          <li><span>Current</span>Ph.D. @ HKUST ECE</li>
           <li><span>Advisor</span>Prof. Yuan Xie</li>
         </ul>
       </div>
@@ -84,6 +86,39 @@
         <li><strong>Hardware-Software Co-Design:</strong> Co-optimizing dataflow, memory hierarchy, and runtime behavior for efficient model execution.</li>
         <li><strong>Sparse &amp; Irregular Workloads:</strong> Architectures and optimizations for sparse models, attention, and dynamic AI workloads.</li>
       </ul>
+    </section>
+
+    <section class="card" id="projects">
+      <h2 class="section-title">Selected Projects</h2>
+      <p class="section-subtitle">
+        A few recent directions that connect my work across AI serving systems, memory-centric acceleration, and architecture design.
+      </p>
+      <div class="project-grid">
+        <article class="project-card">
+          <p class="project-kicker">AI Serving</p>
+          <h3>Delta-MoE</h3>
+          <p>
+            Rethinks transfer granularity for CPU-GPU MoE serving to reduce data movement and improve efficient model execution.
+          </p>
+          <p class="project-meta">ICCAD 2026 · Accepted</p>
+        </article>
+        <article class="project-card">
+          <p class="project-kicker">Compute-in-Memory</p>
+          <h3>SwiftCIM</h3>
+          <p>
+            Explores ReRAM-coupled digital CIM with a fully-fused multi-head attention dataflow for FlashAttention-style workloads.
+          </p>
+          <p class="project-meta">ESSERC 2026 · Accepted</p>
+        </article>
+        <article class="project-card">
+          <p class="project-kicker">Edge AI Acceleration</p>
+          <h3>DSCIM</h3>
+          <p>
+            Builds digital stochastic computing-in-memory support with accurate OR accumulation for energy-efficient edge AI models.
+          </p>
+          <p class="project-meta">DATE 2026 · Accepted</p>
+        </article>
+      </div>
     </section>
 
     <section class="card" id="news">
