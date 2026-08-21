@@ -4,237 +4,283 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="Jiangnan Yu">
-  <meta name="description" content="Jiangnan Yu | Ph.D. student at HKUST working on computer architecture and machine learning acceleration.">
+  <meta name="description" content="Jiangnan Yu is a Ph.D. student at HKUST working on agentic AI infrastructure, LLM serving systems, GPU-cluster systems, and hardware-software co-design.">
   <title>Jiangnan Yu</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <style>
-    /* Fallback styles in case external CSS is not loaded/cached incorrectly */
-    .nav-links a { margin-right: 12px; }
-    .profile-panel { max-width: 320px; margin-top: 12px; }
-    .profile-panel img { width: 100%; height: auto; display: block; }
-    .quick-facts { list-style: none; padding-left: 0; }
-  </style>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Newsreader:opsz,wght@6..72,500;6..72,700&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="stylesheet.css?v=20260713b">
-  <link rel="icon" type="image/png" href="images/hkust_logo.png">
+  <link rel="icon" type="image/jpeg" href="images/profile_photo.jpg">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css?v=20260821-agent-infra">
 </head>
 
 <body>
-  <header class="top-nav">
-    <div class="top-nav-inner">
-      <a class="brand" href="#top">Jiangnan Yu</a>
-      <nav class="nav-links" aria-label="Primary">
-        <a href="#research">Research</a>
-        <a href="#projects">Projects</a>
-        <a href="#news">News</a>
-        <a href="#education">Education</a>
-        <a href="#publications">Publications</a>
+  <div class="wrapper">
+    <header class="sidebar">
+      <a class="avatar" href="images/profile_photo.jpg" aria-label="Open profile photo">
+        <img src="images/profile_photo.jpg" alt="Profile photo of Jiangnan Yu">
+      </a>
+
+      <h1>Jiangnan Yu</h1>
+      <p class="role">Ph.D. Student</p>
+      <p class="affiliation">
+        <a href="https://ece.hkust.edu.hk/">ECE @ HKUST</a>
+      </p>
+      <p class="email">jyucr@connect.ust.hk</p>
+
+      <nav class="sidebar-links" aria-label="Profile links">
+        <a href="mailto:jyucr@connect.ust.hk">Email</a>
+        <a href="https://github.com/Elena32061">GitHub</a>
       </nav>
-    </div>
-  </header>
+    </header>
 
-  <main class="container" id="top">
-    <section class="hero card">
-      <div>
-        <p class="eyebrow">Ph.D. Student, HKUST ECE</p>
-        <h1>Jiangnan Yu</h1>
-        <p class="tagline">Computer Architecture · ML Systems · Hardware-Software Co-Design</p>
-
+    <main class="content" id="top">
+      <section id="about">
+        <h2>About Me</h2>
         <p>
-          I am a second-year Ph.D. student at
-          <a href="https://hkust.edu.hk/">The Hong Kong University of Science and Technology (HKUST)</a>,
+          I am a Ph.D. student in Electronic and Computer Engineering at
+          <a href="https://hkust.edu.hk/">The Hong Kong University of Science and Technology</a>,
           advised by <a href="https://ece.hkust.edu.hk/yuanxie">Prof. Yuan Xie</a>.
-          My research focuses on efficient AI systems and computer architecture, especially CPU-GPU serving for LLM and MoE workloads,
-          memory-centric acceleration, and hardware-software co-design for irregular AI computation.
+          My research is moving toward <strong>agentic AI infrastructure</strong>: systems that make
+          autonomous LLM agents reliable, efficient, hardware-aware, and deployable on real AI clusters.
         </p>
         <p>
-          Before joining HKUST, I received my M.S. and B.S. in Microelectronics from
-          <a href="https://www.fudan.edu.cn/">Fudan University</a>.
+          I work across LLM and MoE serving, GPU/CPU-GPU runtime systems, memory-centric AI accelerators,
+          retrieval-augmented generation on edge devices, and hardware-software co-design for sparse and
+          irregular AI workloads. Before joining HKUST, I received my M.S. and B.S. in Microelectronics
+          from <a href="https://www.fudan.edu.cn/">Fudan University</a>.
         </p>
+        <p class="note">
+          I am open to collaboration on agent runtime systems, AI infrastructure, and efficient model
+          serving across the software-hardware boundary.
+        </p>
+      </section>
 
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="https://github.com/Elena32061">GitHub</a>
-          <a class="btn" href="mailto:jyucr@connect.ust.hk">Email</a>
-        </div>
-
-        <ul class="quick-facts">
-          <li><span>Focus</span>AI serving &amp; memory-centric systems</li>
-          <li><span>Method</span>Hardware-software co-design</li>
-          <li><span>Current</span>Ph.D. @ HKUST ECE</li>
-          <li><span>Advisor</span>Prof. Yuan Xie</li>
+      <section id="interests">
+        <h2>Research Interests</h2>
+        <ul>
+          <li><strong>Agentic AI Infrastructure:</strong> building efficient runtime and serving systems for long-horizon AI agents, with a focus on orchestration, tool use, state management, observability, and resource-aware execution.</li>
+          <li><strong>LLM and MoE Serving:</strong> CPU-GPU cooperation, data movement reduction, batching, and transfer-granularity optimization.</li>
+          <li><strong>GPU-Cluster Systems:</strong> resource-efficient orchestration for heterogeneous AI clusters and production inference workloads.</li>
+          <li><strong>Memory-Centric AI Systems:</strong> ReRAM/CIM/PIM designs for retrieval, sparse inference, and edge AI acceleration.</li>
+          <li><strong>Hardware-Software Co-Design:</strong> dataflow, memory hierarchy, and runtime co-optimization for irregular AI computation.</li>
         </ul>
-      </div>
+      </section>
 
-      <aside class="profile-panel">
-        <a href="images/profile_photo.jpg">
-          <img src="images/profile_photo.jpg" alt="Profile photo of Jiangnan Yu">
-        </a>
-        <p class="email-pill">jyucr@connect.ust.hk</p>
-      </aside>
-    </section>
+      <section id="news">
+        <h2>Recent News <a class="view-all" href="#publications">[View Publications]</a></h2>
+        <ul class="news-list">
+          <li><span>05/2026</span> STS was posted on <strong>arXiv</strong>.</li>
+          <li><span>07/2026</span> Delta-MoE was accepted to <strong>ICCAD 2026</strong>.</li>
+          <li><span>06/2026</span> SwiftCIM was accepted to <strong>ESSERC 2026</strong>.</li>
+          <li><span>04/2026</span> DS-CIM was accepted to <strong>DATE 2026</strong>.</li>
+          <li><span>11/2025</span> McPAL appeared in <strong>DAC 2025</strong>.</li>
+          <li><span>08/2025</span> DIRC-RAG appeared in <strong>ISLPED 2025</strong>.</li>
+          <li><span>07/2024</span> FullSparse was published at <strong>CF 2024</strong>.</li>
+        </ul>
+      </section>
 
-    <section class="card" id="research">
-      <h2 class="section-title">Efficient AI Systems</h2>
-      <p class="section-subtitle">
-        I build efficient AI systems and infrastructure, spanning AI serving, memory-centric computing, and hardware-software co-design.
-      </p>
-      <ul class="focus-list">
-        <li><strong>AI Serving Systems:</strong> CPU-GPU cooperation and data-movement optimization for LLM and MoE inference.</li>
-        <li><strong>Memory-Centric Computing:</strong> Digital and ReRAM compute-in-memory architectures for attention and edge AI workloads.</li>
-        <li><strong>Hardware-Software Co-Design:</strong> Co-optimizing dataflow, memory hierarchy, and runtime behavior for efficient model execution.</li>
-        <li><strong>Sparse &amp; Irregular Workloads:</strong> Architectures and optimizations for sparse models, attention, and dynamic AI workloads.</li>
-      </ul>
-    </section>
+      <section id="projects">
+        <h2>Selected Directions</h2>
+        <p>
+          My current direction is to connect agent workloads with the lower layers that actually make them
+          run: serving runtimes, GPU memory movement, cluster scheduling, retrieval systems, and AI hardware.
+        </p>
+        <ul>
+          <li><strong>Agent-native serving stacks:</strong> infrastructure for multi-step agent execution with predictable latency, state movement, and resource use.</li>
+          <li><strong>CPU-GPU MoE serving:</strong> reducing expert-transfer cost and rethinking where the runtime draws the boundary between CPU memory and GPU execution.</li>
+          <li><strong>Memory-centric retrieval:</strong> edge RAG and in-memory retrieval accelerators that treat vector search as a first-class AI-infra primitive.</li>
+        </ul>
+      </section>
 
-    <section class="card" id="projects">
-      <h2 class="section-title">Selected Projects</h2>
-      <p class="section-subtitle">
-        A few recent directions that connect my work across AI serving systems, memory-centric acceleration, and architecture design.
-      </p>
-      <div class="project-grid">
-        <article class="project-card">
-          <p class="project-kicker">AI Serving</p>
-          <h3>Delta-MoE</h3>
-          <p>
-            Rethinks transfer granularity for CPU-GPU MoE serving to reduce data movement and improve efficient model execution.
-          </p>
-          <p class="project-meta">ICCAD 2026 · Accepted</p>
-        </article>
-        <article class="project-card">
-          <p class="project-kicker">Compute-in-Memory</p>
-          <h3>SwiftCIM</h3>
-          <p>
-            Explores ReRAM-coupled digital CIM with a fully-fused multi-head attention dataflow for FlashAttention-style workloads.
-          </p>
-          <p class="project-meta">ESSERC 2026 · Accepted</p>
-        </article>
-        <article class="project-card">
-          <p class="project-kicker">Edge AI Acceleration</p>
-          <h3>DSCIM</h3>
-          <p>
-            Builds digital stochastic computing-in-memory support with accurate OR accumulation for energy-efficient edge AI models.
-          </p>
-          <p class="project-meta">DATE 2026 · Accepted</p>
-        </article>
-      </div>
-    </section>
+      <section id="education">
+        <h2>Education</h2>
+        <ul class="education-list">
+          <li>
+            <strong>Ph.D. in Electronic and Computer Engineering</strong><br>
+            The Hong Kong University of Science and Technology, 2024 - Present<br>
+            Advisor: <a href="https://ece.hkust.edu.hk/yuanxie">Prof. Yuan Xie</a>
+          </li>
+          <li>
+            <strong>M.S. in Microelectronics</strong><br>
+            Fudan University, 2021 - 2024
+          </li>
+          <li>
+            <strong>B.S. in Microelectronics</strong><br>
+            Fudan University, 2017 - 2021
+          </li>
+        </ul>
+      </section>
 
-    <section class="card" id="news">
-      <h2 class="section-title">News</h2>
-      <ul class="timeline">
-        <li>
-          <span class="year">2026</span>
-          <p><span class="tag-paper">[Paper]</span> SwiftCIM was accepted to <strong>ESSERC 2026</strong>.</p>
-        </li>
-        <li>
-          <span class="year">2026</span>
-          <p><span class="tag-paper">[Paper]</span> Delta-MoE was accepted to <strong>ICCAD 2026</strong>.</p>
-        </li>
-        <li>
-          <span class="year">2026</span>
-          <p><span class="tag-paper">[Paper]</span> DSCIM on Digital Stochastic Computing in Memory was accepted to <strong>DATE 2026</strong>.</p>
-        </li>
-        <li>
-          <span class="year">2025</span>
-          <p><span class="tag-paper">[Paper]</span> McPAL on Multi-Chiplet HBM-PIM architecture for LLMs was accepted to <strong>DAC 2025</strong>.</p>
-        </li>
-        <li>
-          <span class="year">2025</span>
-          <p><span class="tag-paper">[Paper]</span> DIRC-RAG on edge RAG acceleration was accepted to <strong>ISLPED 2025</strong>.</p>
-        </li>
-        <li>
-          <span class="year">2024</span>
-          <p><span class="tag-paper">[Paper]</span> FullSparse on sparse-aware GEMM acceleration was published at <strong>CF 2024</strong>.</p>
-        </li>
-        <li>
-          <span class="year">Jan 2026</span>
-          <p>Personal website launched.</p>
-        </li>
-      </ul>
-    </section>
+      <section id="publications">
+        <h2>Selected Publications <a class="view-all" href="#top">[Back to Top]</a></h2>
+        <p class="pub-note">*: Equal contribution. Local PDF buttons point to full-text files in this repository when an open version is available.</p>
 
-    <section class="card" id="education">
-      <h2 class="section-title">Education</h2>
-      <ul class="edu-list">
-        <li>
-          <p class="degree">Ph.D. in Electronic and Computer Engineering</p>
-          <p class="school">The Hong Kong University of Science and Technology (HKUST), 2024 - Present</p>
-          <p class="detail">Advisor: <a href="https://ece.hkust.edu.hk/yuanxie">Prof. Yuan Xie</a></p>
-        </li>
-        <li>
-          <p class="degree">M.S. in Microelectronics</p>
-          <p class="school">Fudan University (复旦大学), 2021 - 2024</p>
-        </li>
-        <li>
-          <p class="degree">B.S. in Microelectronics</p>
-          <p class="school">Fudan University (复旦大学), 2017 - 2021</p>
-        </li>
-      </ul>
-    </section>
+        <div class="pub-list">
+          <article class="publication">
+            <div class="pub-thumb">
+              <span class="pub-badge">arXiv</span>
+              <img src="publication/thumbs/sts.png" alt="STS paper first page thumbnail">
+            </div>
+            <div class="pub-body">
+              <h3 class="paper-title">STS: Efficient Sparse Attention with Speculative Token Sparsity</h3>
+              <p class="paper-authors">Ceyu Xu*, <strong>Jiangnan Yu*</strong>, Yongji Wu, Yuan Xie <span class="author-note">Co-first author</span></p>
+              <p class="paper-venue"><em>arXiv preprint</em>, 2026.</p>
+              <p class="pub-actions">
+                <a class="pub-button" href="publication/sts.pdf">PDF</a>
+                <a class="pub-button" href="https://arxiv.org/abs/2605.15508">arXiv</a>
+              </p>
+            </div>
+          </article>
 
-    <section class="card" id="publications">
-      <h2 class="section-title">Selected Publications</h2>
-      <p class="pub-note">*: Equal contributions</p>
-      <ol class="pub-list">
-        <li>
-          <p class="paper-title">SwiftCIM: A 55nm 23.2&micro;J/Token L-0.5 ReRAM Coupled Digital CIM Accelerator with Fully-Fused Multi-Head Attention Dataflow for FlashAttention</p>
-          <p class="paper-authors"><strong>Jiangnan Yu</strong>, et al.</p>
-          <p class="paper-venue">ESSERC, 2026 <span class="badge accepted">Accepted</span></p>
-        </li>
-        <li>
-          <p class="paper-title">Delta-MoE: Rethinking Transfer Granularity for CPU-GPU MoE Serving</p>
-          <p class="paper-authors"><strong>Jiangnan Yu</strong></p>
-          <p class="paper-venue">ICCAD, 2026 <span class="badge accepted">Accepted</span></p>
-        </li>
-        <li>
-          <p class="paper-title">Scalable Sparse Transformer Accelerator with In-Memory Butterfly Zero Skipper and Local Attention Reusable Engine for Irregular-Pruned NN</p>
-          <p class="paper-authors"><strong>Jiangnan Yu</strong>, et al.</p>
-          <p class="paper-venue">IEEE JETCAS, 2026 <span class="badge accepted">Accepted</span></p>
-        </li>
-        <li>
-          <p class="paper-title">DSCIM: Digital Stochastic Computing in Memory Featuring Accurate OR Accumulation for Edge AI Models</p>
-          <p class="paper-authors"><strong>Jiangnan Yu*</strong>, et al.</p>
-          <p class="paper-venue">DATE, 2026 <span class="badge accepted">Accepted</span></p>
-        </li>
-        <li>
-          <p class="paper-title">McPAL: Scaling Unstructured Sparse Inference with Multi-Chiplet HBM-PIM Architecture for LLMs</p>
-          <p class="paper-authors">Shiwei Liu, <strong>Jiangnan Yu</strong>, et al.</p>
-          <p class="paper-venue">DAC, 2025 <span class="badge accepted">Accepted</span></p>
-        </li>
-        <li>
-          <p class="paper-title">DIRC-RAG: Accelerating Edge RAG with Robust High-Density and High-Loading-Bandwidth Digital In-ReRAM Computation</p>
-          <p class="paper-authors"><strong>Jiangnan Yu*</strong>, et al.</p>
-          <p class="paper-venue">ISLPED, 2025 <span class="badge accepted">Accepted</span></p>
-        </li>
-        <li>
-          <p class="paper-title">FullSparse: A Sparse-Aware GEMM Accelerator with Online Sparsity Prediction</p>
-          <p class="paper-authors"><strong>Jiangnan Yu</strong>, Yang Fan, et al.</p>
-          <p class="paper-venue">CF, 2024</p>
-        </li>
-        <li>
-          <p class="paper-title">TPNoC: An Efficient Topology Reconfigurable NoC Generator</p>
-          <p class="paper-authors"><strong>Jiangnan Yu</strong>, et al.</p>
-          <p class="paper-venue">GLSVLSI, 2023</p>
-        </li>
-        <li>
-          <p class="paper-title">NNASIM: An Efficient Event-Driven Simulator for DNN Accelerators with Accurate Timing and Area Models</p>
-          <p class="paper-authors">X. Yi, <strong>Jiangnan Yu</strong>, et al.</p>
-          <p class="paper-venue">ISCAS, 2022</p>
-        </li>
-      </ol>
-    </section>
+          <article class="publication">
+            <div class="pub-thumb">
+              <span class="pub-badge">ICCAD</span>
+              <img src="publication/thumbs/delta-moe.png" alt="Delta-MoE paper first page thumbnail">
+            </div>
+            <div class="pub-body">
+              <h3 class="paper-title">Delta-MoE: Rethinking Transfer Granularity for CPU-GPU MoE Serving</h3>
+              <p class="paper-authors"><strong>Jiangnan Yu</strong>, et al. <span class="author-note">First author</span></p>
+              <p class="paper-venue"><em>IEEE/ACM International Conference on Computer-Aided Design (ICCAD)</em>, 2026. <span class="status">Accepted</span></p>
+              <p class="pub-actions"><a class="pub-button" href="publication/delta-moe.pdf">PDF</a></p>
+            </div>
+          </article>
 
-    <section class="card" id="misc">
-      <h2 class="section-title">Misc</h2>
-      <p class="misc-text"><strong>Hobbies:</strong> Running and hiking.</p>
-    </section>
+          <article class="publication">
+            <div class="pub-thumb">
+              <span class="pub-badge">ESSERC</span>
+              <img src="publication/thumbs/swiftcim.png" alt="SwiftCIM paper first page thumbnail">
+            </div>
+            <div class="pub-body">
+              <h3 class="paper-title">SwiftCIM: A 55nm 23.2 microJ/Token L-0.5 ReRAM Coupled Digital CIM Accelerator with Fully-Fused Multi-Head Attention Dataflow for FlashAttention</h3>
+              <p class="paper-authors"><strong>Jiangnan Yu</strong>, et al.</p>
+              <p class="paper-venue"><em>ESSERC</em>, 2026. <span class="status">Accepted</span></p>
+              <p class="pub-actions"><a class="pub-button" href="publication/swiftcim.pdf">PDF</a></p>
+            </div>
+          </article>
 
-    <footer class="site-footer">
-      <p>Last updated: July 2026</p>
-      <p><a href="#top">Back to Top</a> · <a href="https://github.com/jonbarron/website">Template origin</a></p>
-    </footer>
-  </main>
+          <article class="publication">
+            <div class="pub-thumb">
+              <span class="pub-badge">JETCAS</span>
+              <img src="publication/thumbs/sparse-transformer.png" alt="Sparse Transformer paper first page thumbnail">
+            </div>
+            <div class="pub-body">
+              <h3 class="paper-title">Scalable Sparse Transformer Accelerator with In-Memory Butterfly Zero Skipper and Local Attention Reusable Engine for Semi-Structured-Pruned NN</h3>
+              <p class="paper-authors">Shiwei Liu, <strong>Jiangnan Yu</strong>, Peizhe Li, Feng Lin, Chixiao Chen</p>
+              <p class="paper-venue"><em>IEEE Journal on Emerging and Selected Topics in Circuits and Systems (JETCAS)</em>, 2026.</p>
+              <p class="pub-actions">
+                <a class="pub-button" href="publication/sparse-transformer-jetcas.pdf">PDF</a>
+                <a class="pub-button" href="https://doi.org/10.1109/JETCAS.2026.3660689">DOI</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="publication">
+            <div class="pub-thumb">
+              <span class="pub-badge">DATE</span>
+              <img src="publication/thumbs/dscim.png" alt="DS-CIM paper first page thumbnail">
+            </div>
+            <div class="pub-body">
+              <h3 class="paper-title">DS-CIM: Digital Stochastic Computing-In-Memory Featuring Accurate OR-Accumulation via Sample Region Remapping for Edge AI Models</h3>
+              <p class="paper-authors">Kunming Shao*, Liang Zhao*, <strong>Jiangnan Yu*</strong>, Zhipeng Liao, Xiaomeng Wang, Yi Zou, Tim Kwang-Ting Cheng, Chi-Ying Tsui <span class="author-note">Co-first author</span></p>
+              <p class="paper-venue"><em>Design, Automation and Test in Europe Conference (DATE)</em>, 2026.</p>
+              <p class="pub-actions">
+                <a class="pub-button" href="publication/dscim.pdf">PDF</a>
+                <a class="pub-button" href="https://arxiv.org/abs/2601.06724">arXiv</a>
+                <a class="pub-button" href="https://doi.org/10.23919/DATE69613.2026.11539592">DOI</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="publication">
+            <div class="pub-thumb">
+              <span class="pub-badge">DAC</span>
+              <img src="publication/thumbs/mcpal.png" alt="McPAL paper first page thumbnail">
+            </div>
+            <div class="pub-body">
+              <h3 class="paper-title">McPAL: Scaling Unstructured Sparse Inference with Multi-Chiplet HBM-PIM Architecture for LLMs</h3>
+              <p class="paper-authors">Shiwei Liu, Zhirui Huang, <strong>Jiangnan Yu</strong>, Qi Liu, Chixiao Chen</p>
+              <p class="paper-venue"><em>Design Automation Conference (DAC)</em>, 2025.</p>
+              <p class="pub-actions">
+                <a class="pub-button" href="publication/mcpal.pdf">PDF</a>
+                <a class="pub-button" href="https://dl.acm.org/doi/10.1109/DAC63849.2025.11132914">DOI</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="publication">
+            <div class="pub-thumb">
+              <span class="pub-badge">ISLPED</span>
+              <img src="publication/thumbs/dirc-rag.png" alt="DIRC-RAG paper first page thumbnail">
+            </div>
+            <div class="pub-body">
+              <h3 class="paper-title">DIRC-RAG: Accelerating Edge RAG with Robust High-Density and High-Loading-Bandwidth Digital In-ReRAM Computation</h3>
+              <p class="paper-authors">Kunming Shao*, Zhipeng Liao*, <strong>Jiangnan Yu*</strong>, Liang Zhao, Qiwei Li, Xijie Huang, Jingyu He, Fengshi Tian, Yi Zou, Xiaomeng Wang, Tim Kwang-Ting Cheng, Chi-Ying Tsui <span class="author-note">Co-first author</span></p>
+              <p class="paper-venue"><em>IEEE/ACM International Symposium on Low Power Electronics and Design (ISLPED)</em>, 2025.</p>
+              <p class="pub-actions">
+                <a class="pub-button" href="publication/dirc-rag.pdf">PDF</a>
+                <a class="pub-button" href="https://arxiv.org/abs/2510.25278">arXiv</a>
+                <a class="pub-button" href="https://ieeexplore.ieee.org/document/11261807/">IEEE</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="publication">
+            <div class="pub-thumb">
+              <span class="pub-badge">CF</span>
+              <img src="publication/thumbs/fullsparse.png" alt="FullSparse paper first page thumbnail">
+            </div>
+            <div class="pub-body">
+              <h3 class="paper-title">FullSparse: A Sparse-Aware GEMM Accelerator with Online Sparsity Prediction</h3>
+              <p class="paper-authors"><strong>Jiangnan Yu</strong>, Yang Fan, Hanfei Wang, Yecheng Zhang, Chixiao Chen, Xiankui Xiong, Dong Xu, Fan Yang <span class="author-note">First author</span></p>
+              <p class="paper-venue"><em>ACM International Conference on Computing Frontiers (CF)</em>, 2024.</p>
+              <p class="pub-actions">
+                <a class="pub-button" href="publication/fullsparse.pdf">PDF</a>
+                <a class="pub-button" href="https://dl.acm.org/doi/10.1145/3649153.3649180">DOI</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="publication">
+            <div class="pub-thumb">
+              <span class="pub-badge">GLSVLSI</span>
+              <img src="publication/thumbs/tpnoc.png" alt="TPNoC paper first page thumbnail">
+            </div>
+            <div class="pub-body">
+              <h3 class="paper-title">TPNoC: An Efficient Topology Reconfigurable NoC Generator</h3>
+              <p class="paper-authors"><strong>Jiangnan Yu</strong>, Yang Fan, Xiaoling Yi, Chixiao Chen, Jun Tao, Dong Xu, Xiankui Xiong, Haitao Yang</p>
+              <p class="paper-venue"><em>ACM Great Lakes Symposium on VLSI (GLSVLSI)</em>, 2023.</p>
+              <p class="pub-actions">
+                <a class="pub-button" href="publication/tpnoc.pdf">PDF</a>
+                <a class="pub-button" href="https://dl.acm.org/doi/10.1145/3583781.3590257">DOI</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="publication">
+            <div class="pub-thumb">
+              <span class="pub-badge">ISCAS</span>
+              <img src="publication/thumbs/nnasim.png" alt="NNASIM paper first page thumbnail">
+            </div>
+            <div class="pub-body">
+              <h3 class="paper-title">NNASIM: An Efficient Event-Driven Simulator for DNN Accelerators with Accurate Timing and Area Models</h3>
+              <p class="paper-authors">Xiaoling Yi, <strong>Jiangnan Yu</strong>, Zhenyu Wu, Xiankui Xiong, Dong Xu, Chixiao Chen, Jun Tao, Fan Yang</p>
+              <p class="paper-venue"><em>IEEE International Symposium on Circuits and Systems (ISCAS)</em>, 2022.</p>
+              <p class="pub-actions">
+                <a class="pub-button" href="publication/nnasim.pdf">PDF</a>
+                <a class="pub-button" href="https://doi.org/10.1109/ISCAS48785.2022.9937422">DOI</a>
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="misc">
+        <h2>Misc</h2>
+        <p><strong>Motto:</strong> With effort, what you wish for can come true.</p>
+        <p>I enjoy running, hiking, and building small tools that make research work less fragile.</p>
+      </section>
+
+      <footer>
+        <p>Last updated: August 2026</p>
+      </footer>
+    </main>
+  </div>
 </body>
 </html>
