@@ -4,17 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="Jiangnan Yu">
-  <meta name="description" content="Jiangnan Yu is a Ph.D. student at HKUST working on agentic AI infrastructure, LLM serving systems, GPU-cluster systems, and hardware-software co-design.">
+  <meta name="description" content="Jiangnan Yu is a Ph.D. student at HKUST building agentic AI infrastructure across agent runtimes, memory systems, LLM serving, GPU clusters, and hardware-software co-design.">
   <title>Jiangnan Yu</title>
-  <link rel="icon" type="image/jpeg" href="images/JiangnanYu.jpg">
+  <link rel="icon" type="image/jpeg" href="images/JiangnanYu.jpg?v=20260821-avatar">
   <link rel="stylesheet" type="text/css" href="stylesheet.css?v=20260821-agent-infra">
 </head>
 
 <body>
   <div class="wrapper">
     <header class="sidebar">
-      <a class="avatar" href="images/JiangnanYu.jpg" aria-label="Open profile photo">
-        <img src="images/JiangnanYu.jpg" alt="Profile photo of Jiangnan Yu">
+      <a class="avatar" href="images/JiangnanYu.jpg?v=20260821-avatar" aria-label="Open profile photo">
+        <img src="images/JiangnanYu.jpg?v=20260821-avatar" alt="Profile photo of Jiangnan Yu">
       </a>
 
       <h1>Jiangnan Yu</h1>
@@ -27,6 +27,8 @@
       <nav class="sidebar-links" aria-label="Profile links">
         <a href="mailto:jyucr@connect.ust.hk">Email</a>
         <a href="https://github.com/Elena32061">GitHub</a>
+        <a href="#projects">Projects</a>
+        <a href="#publications">Papers</a>
       </nav>
     </header>
 
@@ -37,14 +39,16 @@
           I am a Ph.D. student in Electronic and Computer Engineering at
           <a href="https://hkust.edu.hk/">The Hong Kong University of Science and Technology</a>,
           advised by <a href="https://ece.hkust.edu.hk/yuanxie">Prof. Yuan Xie</a>.
-          My research is moving toward <strong>agentic AI infrastructure</strong>: systems that make
-          autonomous LLM agents reliable, efficient, hardware-aware, and deployable on real AI clusters.
+          I build systems for <strong>agentic AI infrastructure</strong>: runtimes, memory systems,
+          and serving stacks that make long-horizon LLM agents reliable, efficient, observable,
+          and deployable on real AI clusters.
         </p>
         <p>
-          I work across LLM and MoE serving, GPU/CPU-GPU runtime systems, memory-centric AI accelerators,
-          retrieval-augmented generation on edge devices, and hardware-software co-design for sparse and
-          irregular AI workloads. Before joining HKUST, I received my M.S. and B.S. in Microelectronics
-          from <a href="https://www.fudan.edu.cn/">Fudan University</a>.
+          My work connects systems research with deployable prototypes: agent workflow platforms,
+          trace and evaluation infrastructure, LLM/MoE serving, GPU/CPU-GPU runtime systems,
+          memory-centric AI accelerators, and hardware-software co-design for sparse and irregular
+          AI workloads. Before joining HKUST, I received my M.S. and B.S. in Microelectronics from
+          <a href="https://www.fudan.edu.cn/">Fudan University</a>.
         </p>
         <p class="note">
           I am open to collaboration on agent runtime systems, AI infrastructure, and efficient model
@@ -55,17 +59,18 @@
       <section id="interests">
         <h2>Research Interests</h2>
         <ul>
-          <li><strong>Agentic AI Infrastructure:</strong> building efficient runtime and serving systems for long-horizon AI agents, with a focus on orchestration, tool use, state management, observability, and resource-aware execution.</li>
-          <li><strong>LLM and MoE Serving:</strong> CPU-GPU cooperation, data movement reduction, batching, and transfer-granularity optimization.</li>
+          <li><strong>Agentic AI Infrastructure:</strong> runtime, tool use, state management, observability, and evaluation for long-horizon autonomous agents.</li>
+          <li><strong>Agent Memory and Trace Systems:</strong> semantic locality, provenance, target construction, and replayable evaluation for coding agents and research agents.</li>
+          <li><strong>LLM and MoE Serving:</strong> CPU-GPU cooperation, KV-cache movement, batching, speculative execution, and transfer-granularity optimization.</li>
           <li><strong>GPU-Cluster Systems:</strong> resource-efficient orchestration for heterogeneous AI clusters and production inference workloads.</li>
-          <li><strong>Memory-Centric AI Systems:</strong> ReRAM/CIM/PIM designs for retrieval, sparse inference, and edge AI acceleration.</li>
-          <li><strong>Hardware-Software Co-Design:</strong> dataflow, memory hierarchy, and runtime co-optimization for irregular AI computation.</li>
+          <li><strong>Hardware-Software Co-Design:</strong> memory hierarchy, dataflow, sparse inference, and CIM/PIM acceleration for irregular AI computation.</li>
         </ul>
       </section>
 
       <section id="news">
         <h2>Recent News <a class="view-all" href="#publications">[View Publications]</a></h2>
         <ul class="news-list">
+          <li><span>08/2026</span> Open-sourced <strong>SpecDecode Viz</strong> and <strong>HKUST Student Expense Agent</strong>.</li>
           <li><span>07/2026</span> Delta-MoE was accepted to <strong>ICCAD 2026</strong>.</li>
           <li><span>06/2026</span> SwiftCIM was accepted to <strong>ESSERC 2026</strong>.</li>
           <li><span>05/2026</span> STS was posted on <strong>arXiv</strong>.</li>
@@ -77,16 +82,99 @@
       </section>
 
       <section id="projects">
-        <h2>Selected Directions</h2>
-        <p>
-          My current direction is to connect agent workloads with the lower layers that actually make them
-          run: serving runtimes, GPU memory movement, cluster scheduling, retrieval systems, and AI hardware.
+        <h2>Selected Projects</h2>
+        <p class="section-lede">
+          A few current projects and research prototypes around agent products, agent traces,
+          LLM serving, and efficient AI systems.
         </p>
-        <ul>
-          <li><strong>Agent-native serving stacks:</strong> infrastructure for multi-step agent execution with predictable latency, state movement, and resource use.</li>
-          <li><strong>CPU-GPU MoE serving:</strong> reducing expert-transfer cost and rethinking where the runtime draws the boundary between CPU memory and GPU execution.</li>
-          <li><strong>Memory-centric retrieval:</strong> edge RAG and in-memory retrieval accelerators that treat vector search as a first-class AI-infra primitive.</li>
-        </ul>
+        <div class="system-projects">
+          <article class="system-project">
+            <h3>GrowthOS</h3>
+            <p class="project-tagline">AI-native growth consulting SaaS</p>
+            <p>
+              GrowthOS's long-term goal is not to simply replace growth experts, but to turn their
+              experience into reusable system capabilities. In the early stage, it works like an
+              AI-native growth agency that validates workflows through real client projects. In the
+              middle stage, it becomes an agent-assisted SaaS platform that reduces repetitive expert
+              work in market research, competitor analysis, content drafting, and task tracking. In
+              the long run, it aims to make growth consulting, which is often expensive and available
+              only to a small number of companies, accessible as a basic service for more early-stage
+              companies.
+            </p>
+            <p class="project-links">
+              <a class="pub-button" href="https://test.growth.megahit.ai/consulting/campaign?mode=text">Try GrowthOS</a>
+            </p>
+          </article>
+
+          <article class="system-project">
+            <h3>SpecAgent</h3>
+            <p class="project-tagline">Ongoing coding-agent trace workspace</p>
+            <p>
+              A work-in-progress workspace for organizing coding-agent traces, target sampling,
+              input checks, and small vLLM/Slurm experiments.
+            </p>
+          </article>
+
+          <article class="system-project">
+            <h3>AgentMem and AgentProf</h3>
+            <p class="project-tagline">Agent memory locality and workload profiling</p>
+            <p>
+              Research prototypes for studying semantic locality in agent memory and profiling how
+              agent inference differs from ordinary chatbot serving in context growth, KV-cache
+              behavior, idle gaps, and batching.
+            </p>
+          </article>
+
+          <article class="system-project">
+            <h3>HETC / LLM Serving Prototypes</h3>
+            <p class="project-tagline">Tensor compression and long-context serving experiments</p>
+            <p>
+              Prototypes for efficient LLM systems, including modular tensor compression for fp16/bf16
+              tensors and speculation-guided ideas for sparse attention, KV prefetching, and long-context
+              serving.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="open-source">
+        <h2>Open Source Projects</h2>
+        <p>
+          Some recently open-sourced projects that make AI systems easier to inspect and everyday
+          research workflows easier to automate.
+        </p>
+        <div class="project-list">
+          <article class="open-project">
+            <h3>SpecDecode Viz</h3>
+            <p>
+              A real-time visualization playground for speculative decoding, showing draft tokens,
+              verification, accepted tokens, and the intuition behind serving speedups. Follow or
+              star the project if this helps you explain or debug speculative decoding.
+            </p>
+            <p class="project-links">
+              <a class="pub-button" href="https://github.com/Elena32061/specdecode-viz">GitHub</a>
+              <code>git@github.com:Elena32061/specdecode-viz.git</code>
+            </p>
+            <p class="project-video-note">Usage demo:</p>
+            <video class="project-video" controls preload="metadata" playsinline>
+              <source src="media/specdecode-viz-demo.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </article>
+
+          <article class="open-project">
+            <h3>HKUST Student Expense Agent</h3>
+            <p>
+              If you are an HKUST student also struggling with tedious reimbursement forms, this
+              agent can automatically upload reimbursement materials and fill the required fields in
+              the HKUST finance system. You can use it as long as you have an LLM API key.
+            </p>
+            <p class="project-links">
+              <a class="pub-button" href="https://github.com/Elena32061/hkust-student-expense-agent">GitHub</a>
+              <a class="pub-button" href="https://github.com/Elena32061/hkust-student-expense-agent/tree/v0.2-llm-foundation">v0.2 LLM Foundation</a>
+            </p>
+          </article>
+        </div>
       </section>
 
       <section id="education">
