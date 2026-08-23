@@ -275,7 +275,7 @@ li {
 
 .project-video {
   display: block;
-  width: 100%;
+  width: min(100%, 480px);
   max-width: 100%;
   height: auto;
   aspect-ratio: 16 / 9;
