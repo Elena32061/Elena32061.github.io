@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="Jiangnan Yu">
-  <meta name="description" content="Jiangnan Yu is a Ph.D. student at HKUST building agentic AI infrastructure across agent runtimes, memory systems, LLM serving, GPU clusters, and hardware-software co-design.">
+  <meta name="description" content="Jiangnan Yu is a Ph.D. student at HKUST building agentic AI infrastructure across speculative agent runtimes, memory systems, LLM serving, GPU clusters, and hardware-software co-design.">
   <title>Jiangnan Yu</title>
   <link rel="icon" type="image/jpeg" href="images/JiangnanYu.jpg?v=20260821-avatar">
-  <link rel="stylesheet" type="text/css" href="stylesheet.css?v=20260823-video-size">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css?v=20260919-tomasullm">
 </head>
 
 <body>
@@ -39,15 +39,17 @@
           I am a Ph.D. student in Electronic and Computer Engineering at
           <a href="https://hkust.edu.hk/">The Hong Kong University of Science and Technology</a>,
           advised by <a href="https://ece.hkust.edu.hk/yuanxie">Prof. Yuan Xie</a>.
-          I build systems for <strong>agentic AI infrastructure</strong>: runtimes, memory systems,
-          and serving stacks that make long-horizon LLM agents reliable, efficient, observable,
-          and deployable on real AI clusters.
+          I build systems for <strong>agentic AI infrastructure</strong>: speculative runtimes,
+          memory systems, and serving stacks that make long-horizon LLM agents reliable,
+          efficient, observable, and deployable on real AI clusters.
         </p>
         <p>
           My work connects systems research with deployable prototypes: agent workflow platforms,
           trace and evaluation infrastructure, LLM/MoE serving, GPU/CPU-GPU runtime systems,
           memory-centric AI accelerators, and hardware-software co-design for sparse and irregular
-          AI workloads. Before joining HKUST, I received my M.S. and B.S. in Microelectronics from
+          AI workloads. Recent work includes <a href="#tomasullm">TomasuLLM</a>, which brings
+          out-of-order execution to coding agents to reduce time spent waiting on tools.
+          Before joining HKUST, I received my M.S. and B.S. in Microelectronics from
           <a href="https://www.fudan.edu.cn/">Fudan University</a>.
         </p>
         <p class="note">
@@ -59,8 +61,8 @@
       <section id="interests">
         <h2>Research Interests</h2>
         <ul>
-          <li><strong>Agentic AI Infrastructure:</strong> runtime, tool use, state management, observability, and evaluation for long-horizon autonomous agents.</li>
-          <li><strong>Agent Memory and Trace Systems:</strong> semantic locality, provenance, target construction, and replayable evaluation for coding agents and research agents.</li>
+          <li><strong>Agentic AI Infrastructure:</strong> speculative execution, runtime, tool use, state management, observability, and evaluation for long-horizon autonomous agents.</li>
+          <li><strong>Agent Memory and Trace Systems:</strong> dependency tracing, semantic locality, provenance, target construction, and replayable evaluation for coding agents and research agents.</li>
           <li><strong>LLM and MoE Serving:</strong> CPU-GPU cooperation, KV-cache movement, batching, speculative execution, and transfer-granularity optimization.</li>
           <li><strong>GPU-Cluster Systems:</strong> resource-efficient orchestration for heterogeneous AI clusters and production inference workloads.</li>
           <li><strong>Hardware-Software Co-Design:</strong> memory hierarchy, dataflow, sparse inference, and CIM/PIM acceleration for irregular AI computation.</li>
@@ -70,6 +72,7 @@
       <section id="news">
         <h2>Recent News <a class="view-all" href="#publications">[View Publications]</a></h2>
         <ul class="news-list">
+          <li><span>09/2026</span> <a href="https://arxiv.org/abs/2609.38201"><strong>TomasuLLM</strong></a> is on arXiv: out-of-order execution helps coding agents work ahead while tools run.</li>
           <li><span>08/2026</span> Open-sourced <strong>SpecDecode Viz</strong> and <strong>HKUST Student Expense Agent</strong>.</li>
           <li><span>07/2026</span> Delta-MoE was accepted to <strong>ICCAD 2026</strong>.</li>
           <li><span>06/2026</span> SwiftCIM was accepted to <strong>ESSERC 2026</strong>.</li>
@@ -88,6 +91,29 @@
           LLM serving, and efficient AI systems.
         </p>
         <div class="system-projects">
+          <article class="system-project" id="tomasullm">
+            <h3>TomasuLLM</h3>
+            <p class="project-tagline">Bringing out-of-order execution to coding agents</p>
+            <p>
+              Long-running compilers, tests, and repository commands leave coding agents waiting.
+              TomasuLLM borrows out-of-order execution and in-order commit from processors to
+              overlap those waits with likely future work. It drafts future actions, runs them in
+              isolated copy-on-write sandboxes, and tracks their dependencies and effects. The
+              runtime validates actions, dependencies, and effects against the committed state
+              before committing accepted results from real executions in the agent's trajectory order.
+            </p>
+            <p>
+              Evaluation reports <strong>1.31× speedup</strong> on 100 SWE-bench Verified tasks,
+              <strong>1.35×</strong> on 28 Terminal-Bench 2.0 tasks, and
+              <strong>1.27× matched-progress speedup</strong> across 18 SWE-Marathon sessions.
+              <strong>No false accepts were observed</strong> in 4,010 audited validation records.
+            </p>
+            <p class="project-links">
+              <a class="pub-button" href="publication/tomasullm.pdf">PDF</a>
+              <a class="pub-button" href="https://arxiv.org/abs/2609.38201">arXiv</a>
+            </p>
+          </article>
+
           <article class="system-project">
             <h3>GrowthOS</h3>
             <p class="project-tagline">AI-native growth consulting SaaS</p>
@@ -201,6 +227,22 @@
         <p class="pub-note">*: Equal contribution. Local PDF buttons point to full-text files in this repository when an open version is available.</p>
 
         <div class="pub-list">
+          <article class="publication">
+            <div class="pub-thumb">
+              <span class="pub-badge">arXiv</span>
+              <img src="publication/thumbs/tomasullm.png" alt="TomasuLLM paper first page thumbnail">
+            </div>
+            <div class="pub-body">
+              <h3 class="paper-title"><a href="https://arxiv.org/abs/2609.38201">TomasuLLM: Out-of-Order Speculative Execution for LLM Agents</a></h3>
+              <p class="paper-authors"><strong>Jiangnan Yu*</strong>, Ceyu Xu*, Mengming Li, Shiyu Huang, Yiran Xia, Jian Weng, Hui Xue, Haohui Mai, Zhiyao Xie, Yuan Xie <span class="author-note">Co-first author</span></p>
+              <p class="paper-venue"><em>arXiv preprint</em>, 2026.</p>
+              <p class="pub-actions">
+                <a class="pub-button" href="publication/tomasullm.pdf">PDF</a>
+                <a class="pub-button" href="https://arxiv.org/abs/2609.38201">arXiv</a>
+              </p>
+            </div>
+          </article>
+
           <article class="publication">
             <div class="pub-thumb">
               <span class="pub-badge">arXiv</span>
@@ -366,7 +408,7 @@
       </section>
 
       <footer>
-        <p>Last updated: August 2026</p>
+        <p>Last updated: October 2026</p>
       </footer>
     </main>
   </div>
