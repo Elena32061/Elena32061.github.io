@@ -72,6 +72,7 @@
       <section id="news">
         <h2>Recent News <a class="view-all" href="#publications">[View Publications]</a></h2>
         <ul class="news-list">
+          <li><span>10/2026</span> Built <a href="#growthos"><strong>Megahit Annotation Studio</strong></a> to organize client materials, inspect AI annotations against source evidence, and review suggested relationships.</li>
           <li><span>09/2026</span> <a href="https://arxiv.org/abs/2609.38201"><strong>TomasuLLM</strong></a> is on arXiv: out-of-order execution helps coding agents work ahead while tools run.</li>
           <li><span>08/2026</span> Open-sourced <strong>SpecDecode Viz</strong> and <strong>HKUST Student Expense Agent</strong>.</li>
           <li><span>07/2026</span> Delta-MoE was accepted to <strong>ICCAD 2026</strong>.</li>
@@ -114,21 +115,28 @@
             </p>
           </article>
 
-          <article class="system-project">
-            <h3>GrowthOS</h3>
-            <p class="project-tagline">AI-native growth consulting SaaS</p>
+          <article class="system-project" id="growthos">
+            <h3>Megahit Annotation Studio</h3>
+            <p class="project-tagline">Turning expert experience into knowledge you can verify</p>
             <p>
-              GrowthOS's long-term goal is not to simply replace growth experts, but to turn their
-              experience into reusable system capabilities. In the early stage, it works like an
-              AI-native growth agency that validates workflows through real client projects. In the
-              middle stage, it becomes an agent-assisted SaaS platform that reduces repetitive expert
-              work in market research, competitor analysis, content drafting, and task tracking. In
-              the long run, it aims to make growth consulting, which is often expensive and available
-              only to a small number of companies, accessible as a basic service for more early-stage
-              companies.
+              Expert experience is often scattered across client documents and conversations.
+              Megahit Annotation Studio imports Lark documents and chats alongside local files,
+              organizes materials along each client's business timeline, and uses AI to draft
+              annotations linked to source passages. Reviewers inspect the evidence, correct
+              annotations, and confirm what to keep. Relationships proposed across sources remain
+              suggestions until reviewers check the supporting evidence; human corrections can
+              become approved rules for later annotations.
+            </p>
+            <p>
+              Building on the earlier GrowthOS consulting workbench, this prototype focuses on
+              reviewing source material and making expert knowledge traceable. The separate
+              workbench supports contextual Chat and human evaluation of answers with and without
+              a knowledge base, keeping the question, conversation context, and model settings fixed.
             </p>
             <p class="project-links">
-              <a class="pub-button" href="https://test.growth.megahit.ai/consulting/campaign?mode=text">Try GrowthOS</a>
+              <a class="pub-button" href="https://workbench.megahit.ai/studio/">Open Annotation Studio</a>
+              <a class="pub-button" href="https://workbench.megahit.ai/">Growth Workbench</a>
+              <small>Lark sign-in required.</small>
             </p>
           </article>
 
